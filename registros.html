@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primer previo</title>
+    <!--FUENTES-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!--CSS MAIN-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">TodoLoQueSea SAS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link pt-3" href="index.html">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-item nav-link active pt-3" href="registros.html">Registros</a>
+                        <a class="nav-item nav-link" href="#">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-user"></i>Login
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="InputEmail1">Email</label>
+                                                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="InputPassword1">Password</label>
+                                                    <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-outline-success">Iniciar sesión</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <p class="display-4 text-center">Registrar</br>Cliente</p>
+                <img src="imagenes/icon1.png" alt="..." class="img-thumbnail centrar mb-3">
+
+                <form>
+                    <div class="form-group ">
+                        <label for="formGroupExampleInput">Nombre</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Celular</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Celular">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Dirección</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Dirección">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail1">Email</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputPassword1">Password</label>
+                        <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                    </div>
+                </form>
+
+                <a href="#">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-secondary btn-lg btn-block" data-toggle="modal" data-target="#">
+                        Registrar cliente
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-md-4 border-right">
+                <p class="display-4 text-center">Registrar</br>Mensajero</p>
+                <img src="imagenes/icon2.png" alt="..." class="img-thumbnail centrar mb-3">
+
+                <form>
+
+
+                    <div class="form-group">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Preferencia</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Elige</option>
+                            <option value="1">En el día</option>
+                            <option value="2">En la noche</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="float-none">Horario de</label>
+                        </br>
+                        <div class="form-check col-3 float-left">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                4 horas
+                            </label>
+                        </div>
+                        <div class="form-check col-3 float-left">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                6 horas
+                            </label>
+                        </div>
+                        <div class="form-check col-3 float-left">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                8 horas
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">¿Tiene experiencia?</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Elige</option>
+                            <option value="1">Si</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlFile1">Cargar fotografía</label>
+                        <input type="file" class="form-control-file form-control-sm" id="exampleFormControlFile1">
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlFile1">Cargar CV en Pdf</label>
+                        <input type="file" class="form-control-file form-control-sm" id="exampleFormControlFile1">
+                    </div>
+
+                    <div class="form-check pb-1">
+                        <input class="form-check-input" type="checkbox" id="FieldsetCheck">
+                        <label class="form-check-label" for="disabledFieldsetCheck">
+                            Acepta el contrato
+                        </label>
+                    </div>
+
+                </form>
+
+                <a href="#">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-secondary btn-lg btn-block" data-toggle="modal" data-target="#">
+                        Registrar Mensajero
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <p class="display-4 text-center">Registrar</br>Envío</p>
+                <img src="imagenes/icon3.png" alt="..." class="img-thumbnail centrar mb-3">
+
+                <form>
+                    <div class="form-group">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Elegir cliente</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Elige</option>
+                            <option value="1">Marcos</option>
+                            <option value="2">Pedro</option>
+                            <option value="2">Juliana</option>
+                            <option value="2">Nery</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Dirección de destino</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Destino">
+                    </div>
+                </form>
+
+                <a href="#">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-secondary btn-lg btn-block" data-toggle="modal" data-target="#">
+                        Registrar Envío
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5">
+
+
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fas fa-user"></i>Login
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="InputEmail1">Email</label>
+                                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="InputPassword1">Password</label>
+                                                <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-outline-success">Iniciar sesión</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pt-2">
+                    <a href="http://facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-square"></i> Siguenos en facebook</a>
+                </div>
+                <div class="col-md-3 pt-2">
+                    <a href="http://instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i> Siguenos en instagram</a>
+                </div>
+                <div class="col-md-3 pt-2">
+                    <a href="http://linkedin.com/" target="_blank">
+                        <i class="fab fa-linkedin"></i> Siguenos en linkedin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--*********************************************************************************************************-->
+    <!--CDN JQUERY Y POPPER-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!--BOOTSTRAP-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--CDN FONT AWESOME-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

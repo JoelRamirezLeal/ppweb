@@ -1,0 +1,32 @@
+.svg-inline--fa{
+ font-size: 1.3em;
+}
+div.encabezado h3{
+ background-color: #343a40;
+ color: #fff;
+ border: 1px solid #1f1f1f;
+}
+footer{
+    background-color: #202020;
+}
+footer a{
+    color: white;
+}
+img{
+    border-style: none !important;
+}
+.centrar{
+    margin: 0 auto;
+    display: block;
+}
+.card img:hover{
+    cursor: pointer;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+footer a{
+    color: #9a9d8d;
+}
+footer a:hover{
+    color: white;
+}
